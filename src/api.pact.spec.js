@@ -42,6 +42,7 @@ describe("API Pact test", () => {
           },
           body: like(expectedProduct),
         });
+
       return mockProvider.executeTest(async (mockserver) => {
         // Act
         const api = new API(mockserver.url);

@@ -5,12 +5,12 @@ on:
     branches:
       - master
     paths:
-      - '**.md'
+      - "**.md"
 
 jobs:
   run:
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'pactflow/example-consumer' }}
+    if: ${{ github.repository == 'dfloresleroy/example-consumer' }}
     steps:
       - name: Trigger docs.pactflow.io update workflow
         run: |
